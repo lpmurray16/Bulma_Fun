@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+$blue: #1f6ba9;
+$white: #fbfbfb;
+$black: #070707;
+$orange: #db832b;
+
+// Update the sans-serif font family
+$family-sans-serif: "Sora", "Helvetica", "Arial", sans-serif;
+
+$primary: $orange;
+$primary-invert: $black;
+
+@import "../node_modules/bulma/bulma";
+
+html {
+    background-color: $black;
+}
+
+.bg-crosses {
+    background: url("https://images.unsplash.com/photo-1653311236202-aa57d07e0b9c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670")
+        no-repeat center center fixed;
+}
+.button.is-primary:hover,
+.button.is-primary.is-hovered {
+    background-color: $primary;
+    border: 0;
+}
+.box-shadow-black {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        box-shadow: 7em 0em inset $white;
+        background-color: $white;
+    }
+}
